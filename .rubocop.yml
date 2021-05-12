@@ -1,0 +1,21 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - bin/*
+    - db/schema.rb
+  NewCops: enable
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+RSpec/MultipleMemoizedHelpers:
+  # default: 5
+  Max: 10
+
+Style/Documentation:
+  Enabled: false

@@ -13,6 +13,10 @@ Metrics/BlockLength:
   Exclude:
     - spec/**/*
 
+Rails/Output:
+  Exclude:
+    - db/seeds.rb
+
 RSpec/MultipleMemoizedHelpers:
   # default: 5
   Max: 10

@@ -23,9 +23,9 @@ end
 
 puts '> Flight executions...'
 flight_executions = [
-  { flight: Flight.first, airplane: Airplane.first, start_time: Time.current + 30.days },
-  { flight: Flight.third, airplane: Airplane.third, start_time: Time.current + 28.days },
-  { flight: Flight.first, airplane: Airplane.second, start_time: Time.current + 32.days }
+  { flight: Flight.first, airplane: Airplane.first, reference: 'MIVE11', start_time: Time.current + 30.days },
+  { flight: Flight.third, airplane: Airplane.third, reference: 'ROVE25', start_time: Time.current + 28.days },
+  { flight: Flight.first, airplane: Airplane.second, reference: 'MIVE04', start_time: Time.current + 32.days }
 ]
 flight_executions.each do |flight_execution|
   FlightExecution.find_or_create_by!(flight_execution)

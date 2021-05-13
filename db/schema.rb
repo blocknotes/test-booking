@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2021_05_12_090501) do
   create_table "flight_executions", force: :cascade do |t|
     t.integer "airplane_id"
     t.integer "flight_id"
+    t.string "reference", null: false
     t.integer "passengers_count", default: 0, null: false
     t.datetime "start_time", null: false
     t.datetime "created_at", precision: 6, null: false

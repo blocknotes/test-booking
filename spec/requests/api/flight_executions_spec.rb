@@ -52,7 +52,7 @@ RSpec.describe 'Flight executions', type: :request do
       before do
         airplane = Airplane.create!(reference: reference, model: model, max_passengers: 5)
         flight = Flight.create!(from_city: from, to_city: to)
-        FlightExecution.create!(start_time: Time.current.tomorrow, flight: flight, airplane: airplane)
+        FlightExecution.create!(start_time: Time.current.tomorrow, flight: flight, airplane: airplane, reference: 'F1')
         allow(FlightExecution).to receive(:includes).and_call_original
         flight_executions
       end

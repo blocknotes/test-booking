@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 json.array! @flight_executions do |flight_execution|
+  json.reference flight_execution.reference
   json.start_time flight_execution.start_time
 
   json.airplane do

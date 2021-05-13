@@ -1,24 +1,13 @@
-# README
+# Booking test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Tested with:
+- Ruby 2.7.2
+- SQLite
 
-Things you may want to cover:
+### Routes
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+               Prefix Verb URI Pattern                                      Controller#Action
+       api_passengers POST /api/flight_executions/:ref/passengers(.:format) api/passengers#create {:format=>:json}
+api_flight_executions GET  /api/flight_executions(.:format)                 api/flight_executions#index {:format=>:json}
+```

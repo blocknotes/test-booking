@@ -1,4 +1,6 @@
-# Booking test [![Specs](https://github.com/blocknotes/booking-test/actions/workflows/specs.yml/badge.svg)](https://github.com/blocknotes/booking-test/actions/workflows/specs.yml) [![Linters](https://github.com/blocknotes/booking-test/actions/workflows/linters.yml/badge.svg)](https://github.com/blocknotes/booking-test/actions/workflows/linters.yml)
+# Test booking
+[![Specs](https://github.com/blocknotes/test-booking/actions/workflows/specs.yml/badge.svg)](https://github.com/blocknotes/test-booking/actions/workflows/specs.yml)
+[![Linters](https://github.com/blocknotes/test-booking/actions/workflows/linters.yml/badge.svg)](https://github.com/blocknotes/test-booking/actions/workflows/linters.yml)
 
 Tested with:
 - Ruby 2.7.2

@@ -7,11 +7,17 @@ AllCops:
   Exclude:
     - bin/*
     - db/schema.rb
+    - vendor/**/*
   NewCops: enable
+  TargetRubyVersion: 2.7
 
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
+
+Rails/Output:
+  Exclude:
+    - db/seeds.rb
 
 RSpec/MultipleMemoizedHelpers:
   # default: 5
